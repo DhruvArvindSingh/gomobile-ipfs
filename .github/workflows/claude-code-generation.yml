@@ -331,7 +331,7 @@ jobs:
               pr_data = {
                   'title': f'🤖 Claude Generated: {task_description[:50]}{"..." if len(task_description) > 50 else ""}',
                   'head': branch_name,
-                  'base': 'main',
+                  'base': 'master',
                   'body': pr_body
               }
               
