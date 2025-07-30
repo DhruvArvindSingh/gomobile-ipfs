@@ -68,8 +68,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install boto3 requests botocore
-          # Install gomobile
-          cd go && go install golang.org/x/mobile/cmd/gomobile@latest
+          # Install gomobile using the project's specific version
+          cd go && go install golang.org/x/mobile/cmd/gomobile
           gomobile init
 
       - name: Extract task description
